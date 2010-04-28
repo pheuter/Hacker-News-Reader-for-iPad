@@ -33,7 +33,7 @@
     if (connection) {
         payload = [[NSMutableData data] retain];
         [indicator startAnimating];
-        NSLog(@"Connection starting: %@", connection);
+        HNLog(@"Connection starting: %@", connection);
     } else {
         [[[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't fetch" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease] show];
     }
@@ -262,13 +262,13 @@
 #pragma mark NSURLConnection Delegates
 - (void)connection:(NSURLConnection *)conn didReceiveResponse:(NSURLResponse *)response
 {
-	NSLog(@"Recieved response with expected length: %i", [response expectedContentLength]);
+	HNLog(@"Recieved response with expected length: %i", [response expectedContentLength]);
     [payload setLength:0];
 
 }
 - (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data
 {
-    NSLog(@"Recieving data. Incoming Size: %i  Total Size: %i", [data length], [payload length]);
+    HNLog(@"Recieving data. Incoming Size: %i  Total Size: %i", [data length], [payload length]);
     [payload appendData:data];
 
 }
@@ -282,7 +282,7 @@
     [rootViewController insertNewObject:[rspData objectForKey:@"results"] favorite:[detailItem valueForKey:@"favorite"]];
     [indicator stopAnimating];
     
-	NSLog(@"Connection finished: %@", conn);
+	HNLog(@"Connection finished: %@", conn);
 }
 - (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error
 {

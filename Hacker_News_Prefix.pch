@@ -13,3 +13,9 @@
     #import <UIKit/UIKit.h>
 	#import <CoreData/CoreData.h>
 #endif
+
+#ifdef DEBUG
+#define HNLOG(fmt, ...) NSLog(@"%s: " fmt, __PRETTY_FUNCTION__, ##__VA_ARGS__)
+#else
+#define HNLOG(...)
+#endif
