@@ -1,0 +1,6 @@
+/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m:17: error: expected ';' before '-' token
+/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m:64: warning: '@end' missing in implementation context
+/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m:64: warning: property 'space' requires method '-space' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m:64: warning: property 'space' requires the method 'setSpace:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m:64: warning: incomplete implementation of class 'WebViewController'
+/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m:64: warning: method definition for '-dismissView:' not found

@@ -1,0 +1,779 @@
+THacker News
+v7
+r0
+t293312672.612687
+cCheck dependencies
+cCpResource "build/Debug-iphoneos/Hacker News.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Info.plist" Hacker_News-Info.plist
+cCompileXIB "/Users/Mark/Desktop/Hacker News/WebViewController.xib"
+cCompileXIB "/Users/Mark/Desktop/Hacker News/DetailView.xib"
+cCompileXIB "/Users/Mark/Desktop/Hacker News/MainWindow.xib"
+cCopyPNGFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/icon.png" icon.png
+cCopyPNGFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/instapaper.png" instapaper.png
+cProcessPCH /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch.gch Hacker_News_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cDataModelVersionCompile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker_News.momd" "/Users/Mark/Desktop/Hacker News/Hacker_News.xcdatamodeld"
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/main.o" "/Users/Mark/Desktop/Hacker News/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/DetailViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker_NewsAppDelegate.o" "/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/RootViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/WebViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSObject+SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSString+SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News" normal armv7
+cGenerateDSYMFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app.dSYM" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News"
+cProcessProductPackaging "/Users/Mark/Library/MobileDevice/Provisioning Profiles/BD8FCBC7-F367-4943-99A2-468C077F2E1F.mobileprovision" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision"
+cTouch "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent"
+cCodeSign "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004BA82B910000000000000110
+t1269312401
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+c000000004B9F103D00000000000000DD
+t1268715581
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B9F103D00000000000001E5
+t1268715581
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004B9F274300000000002B9970
+t1268721475
+s2857328
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004B9F2725000000000000046B
+t1268721445
+s1131
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AC100000000003B4B70
+t1268792001
+s3885936
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F26D2000000000036A650
+t1268721362
+s3581520
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F26B90000000000001355
+t1268721337
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B9F318D000000000000098F
+t1268724109
+s2447
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B9F32090000000002703230
+t1268724233
+s40907312
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include/Availability.h
+c000000004B9F27C60000000000001A1A
+t1268721606
+s6682
+
+N/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.h
+c000000004BCA65EF00000000000007EA
+t1271555567
+s2026
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m
+c000000004BCA69240000000000002C5B
+t1271556388
+s11355
+i"DetailViewController.h"
+i"RootViewController.h"
+i"WebViewController.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.h
+c000000004BC3CD1E00000000000003D1
+t1271123230
+s977
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m
+c000000004BCA5F57000000000000197E
+t1271553879
+s6526
+i"Hacker_NewsAppDelegate.h"
+i"RootViewController.h"
+i"DetailViewController.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/JSON.h
+c000000004BC8EBA0000000000000061D
+t1271458720
+s1565
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.h
+c000000004BC39CC60000000000000888
+t1271110854
+s2184
+i<Foundation/Foundation.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m
+c000000004BC39CC60000000000000821
+t1271110854
+s2081
+i"NSObject+SBJSON.h"
+i"SBJSON.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.h
+c000000004BC39CC60000000000000705
+t1271110854
+s1797
+i<Foundation/Foundation.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m
+c000000004BC39CC600000000000007DA
+t1271110854
+s2010
+i"NSString+SBJSON.h"
+i"SBJSON.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/RootViewController.h
+c000000004BCB3F9000000000000003A6
+t1271611280
+s934
+i"JSON.h"
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m
+c000000004BCB4240000000000000338A
+t1271611968
+s13194
+i"RootViewController.h"
+i"DetailViewController.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/SBJSON.h
+c000000004BC39CC600000000000013CF
+t1271110854
+s5071
+i<Foundation/Foundation.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m
+c000000004BC39CC60000000000005AA2
+t1271110854
+s23202
+i"SBJSON.h"
+
+N/Users/Mark/Desktop/Hacker News/Classes/WebViewController.h
+c000000004BC4C7020000000000000161
+t1271187202
+s353
+i<UIKit/UIKit.h>
+
+N/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m
+c000000004BC4CDE400000000000005C4
+t1271188964
+s1476
+i"WebViewController.h"
+i"DetailViewController.h"
+
+N/Users/Mark/Desktop/Hacker News/DetailView.xib
+c000000004BCB4211000000000000C6E4
+t1271611921
+s50916
+
+N/Users/Mark/Desktop/Hacker News/Hacker_News.xcdatamodeld
+c000000004BCA760A0000000000000088
+t1271559690
+s136
+
+N/Users/Mark/Desktop/Hacker News/Hacker_News_Prefix.pch
+c000000004BCB35450000000000000148
+t1271608645
+s328
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Mark/Desktop/Hacker News/MainWindow.xib
+c000000004BCB421D00000000000092CD
+t1271611933
+s37581
+
+N/Users/Mark/Desktop/Hacker News/WebViewController.xib
+c000000004BCB4218000000000000604A
+t1271611928
+s24650
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app
+t1271619872
+s442
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app.dSYM
+t1271619872
+s102
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/DetailView.nib
+t1271619870
+s4331
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News
+t1271619872
+s83080
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker_News.momd
+t1271619871
+s136
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Info.plist
+t1271619870
+s693
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/MainWindow.nib
+t1271619871
+s1947
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/PkgInfo
+t1271619870
+s8
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/ResourceRules.plist
+t1271619870
+s485
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/WebViewController.nib
+t1271619870
+s1732
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision
+t1271619872
+s7184
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/icon.png
+t1271619870
+s3561
+
+N/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/instapaper.png
+t1271619871
+s69735
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent
+t1271619872
+s318
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/DetailViewController.o
+t1271619683
+s87940
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News
+t1271619684
+s87200
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News.LinkFileList
+c000000004BCB605B00000000000003FD
+t1271619675
+s1021
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker_NewsAppDelegate.o
+t1271619683
+s61560
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSObject+SBJSON.o
+t1271619683
+s8116
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSString+SBJSON.o
+t1271619683
+s8068
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/RootViewController.o
+t1271619683
+s70352
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/SBJSON.o
+t1271619684
+s51940
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/WebViewController.o
+t1271619683
+s36088
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/main.o
+t1271619683
+s6424
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/DetailViewController.o
+t1271619872
+s87096
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News
+t1271619685
+s83080
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News.LinkFileList
+c000000004BCB611E00000000000003FD
+t1271619870
+s1021
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker_NewsAppDelegate.o
+t1271619872
+s61356
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSObject+SBJSON.o
+t1271619872
+s8064
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSString+SBJSON.o
+t1271619872
+s8016
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/RootViewController.o
+t1271619872
+s69676
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/SBJSON.o
+t1271619872
+s49304
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/WebViewController.o
+t1271619872
+s36036
+
+N/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/main.o
+t1271619871
+s6408
+
+N/Users/Mark/Desktop/Hacker News/icon.png
+c000000004BCB298D0000000000000E08
+t1271605645
+s3592
+
+N/Users/Mark/Desktop/Hacker News/instapaper.png
+c000000004BCA17C300000000000115FF
+t1271535555
+s71167
+
+N/Users/Mark/Desktop/Hacker News/main.m
+c000000004BCB35450000000000000175
+t1271608645
+s373
+i<UIKit/UIKit.h>
+
+N/Users/Mark/Library/MobileDevice/Provisioning Profiles/BD8FCBC7-F367-4943-99A2-468C077F2E1F.mobileprovision
+c000000004BCB41520000000000001C10
+t1271611730
+s7184
+
+N/var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch.gch
+t1271619683
+s8958612
+
+N/var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch.gch
+t1271619871
+s9421460
+
+NHacker_News-Info.plist
+c000000004BCB42540000000000000371
+t1271611988
+s881
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies293312670#293312670#0(0"0(0#1#0"4300911832#0"0#
+
+CCodeSign "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"
+s293312672.559898
+e293312672.612649
+r0
+xCodeSign
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app
+oiPhone Developer: Mark Fayngersh (7WE3K56978): ambiguous (matches "iPhone Developer: Mark Fayngersh (7WE3K56978)" in /Users/Mark/Library/Application Support/Adobe/AIR/ELS/AdobeWave.4875E02D9FB21EE389F73B8D1702B320485DF8CE.1/PrivateEncryptedDatak and "iPhone Developer: Mark Fayngersh (7WE3K56978)" in /Users/Mark/Library/Keychains/login.keychain)
+lSLF07#2@47"CodeSign "build/Debug-iphoneos/Hacker News.app"293312672#293312672#0(397"iPhone Developer: Mark Fayngersh (7WE3K56978): ambiguous (matches "iPhone Developer: Mark Fayngersh (7WE3K56978)" in /Users/Mark/Library/Application Support/Adobe/AIR/ELS/AdobeWave.4875E02D9FB21EE389F73B8D1702B320485DF8CE.1/PrivateEncryptedDatak and "iPhone Developer: Mark Fayngersh (7WE3K56978)" in /Users/Mark/Library/Keychains/login.keychain)Command /usr/bin/codesign failed with exit code 11(4@49"Command /usr/bin/codesign failed with exit code 1293312672#18446744073709551615#0#0(1@0"0(0#0#68"/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app4300911832#669"    cd "/Users/Mark/Desktop/Hacker News"    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Mark Fayngersh (7WE3K56978)" "--resource-rules=/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/ResourceRules.plist" --entitlements "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"1#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/DetailViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.439989
+e293312483.642973
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/DetailViewController.o
+x/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m293312483#293312483#0(0"0(0#0#62"/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m4300911832#1789"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/DetailViewController.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker_NewsAppDelegate.o" "/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.532009
+e293312483.672215
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker_NewsAppDelegate.o
+x/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m293312483#293312483#0(0"0(0#0#64"/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m4300911832#1793"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker_NewsAppDelegate.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSObject+SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.772534
+e293312483.859867
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSObject+SBJSON.o
+x/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m293312483#293312483#0(0"0(0#0#57"/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m4300911832#1779"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSObject+SBJSON.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSString+SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.825642
+e293312483.899938
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSString+SBJSON.o
+x/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m293312483#293312483#0(0"0(0#0#57"/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m4300911832#1779"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/NSString+SBJSON.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/RootViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.643096
+e293312483.825525
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/RootViewController.o
+x/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/Mark/Desktop/Hacker News/Classes/RootViewController.m293312483#293312483#0(0"0(0#0#60"/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m4300911832#1785"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/RootViewController.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.859988
+e293312484.123995
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/SBJSON.o
+x/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/Mark/Desktop/Hacker News/Classes/SBJSON.m293312483#293312484#0(0"0(0#0#48"/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m4300911832#1761"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/SBJSON.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/WebViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.672350
+e293312483.772239
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/WebViewController.o
+x/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/Mark/Desktop/Hacker News/Classes/WebViewController.m293312483#293312483#0(0"0(0#0#59"/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m4300911832#1783"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/WebViewController.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/main.o" "/Users/Mark/Desktop/Hacker News/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312483.325345
+e293312483.531895
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/main.o
+x/Users/Mark/Desktop/Hacker News/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Users/Mark/Desktop/Hacker News/main.m293312483#293312483#0(0"0(0#0#38"/Users/Mark/Desktop/Hacker News/main.m4300911832#1749"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/main.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/main.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/DetailViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312671.911040
+e293312672.108343
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/DetailViewController.o
+x/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m293312671#293312672#0(0"0(0#0#62"/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m4300911832#1789"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/DetailViewController.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/DetailViewController.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker_NewsAppDelegate.o" "/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312671.918928
+e293312672.048039
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker_NewsAppDelegate.o
+x/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m293312671#293312672#0(0"0(0#0#64"/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m4300911832#1793"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/Hacker_NewsAppDelegate.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker_NewsAppDelegate.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSObject+SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312672.211454
+e293312672.284313
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSObject+SBJSON.o
+x/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m293312672#293312672#0(0"0(0#0#57"/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m4300911832#1779"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/NSObject+SBJSON.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSObject+SBJSON.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSString+SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312672.213564
+e293312672.285653
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSString+SBJSON.o
+x/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m293312672#293312672#0(0"0(0#0#57"/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m4300911832#1779"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/NSString+SBJSON.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/NSString+SBJSON.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/RootViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312672.048167
+e293312672.213466
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/RootViewController.o
+x/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/Mark/Desktop/Hacker News/Classes/RootViewController.m293312672#293312672#0(0"0(0#0#60"/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m4300911832#1785"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/RootViewController.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/RootViewController.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/SBJSON.o" "/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312672.284436
+e293312672.459564
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/SBJSON.o
+x/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/Mark/Desktop/Hacker News/Classes/SBJSON.m293312672#293312672#0(0"0(0#0#48"/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m4300911832#1761"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/SBJSON.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/SBJSON.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/WebViewController.o" "/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312672.108459
+e293312672.211323
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/WebViewController.o
+x/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/Mark/Desktop/Hacker News/Classes/WebViewController.m293312672#293312672#0(0"0(0#0#59"/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m4300911832#1783"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/Classes/WebViewController.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/WebViewController.o"0#
+
+CCompileC "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/main.o" "/Users/Mark/Desktop/Hacker News/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312671.850006
+e293312671.918808
+r1
+xCompileC
+xbuild/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/main.o
+x/Users/Mark/Desktop/Hacker News/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Users/Mark/Desktop/Hacker News/main.m293312671#293312671#0(0"0(0#0#38"/Users/Mark/Desktop/Hacker News/main.m4300911832#1749"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -include /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch -c "/Users/Mark/Desktop/Hacker News/main.m" -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/main.o"0#
+
+CCompileXIB "/Users/Mark/Desktop/Hacker News/DetailView.xib"
+s293312670.330111
+e293312670.896630
+r1
+xCompileXIB
+x/Users/Mark/Desktop/Hacker News/DetailView.xib
+lSLF07#2@25"CompileXIB DetailView.xib293312670#293312670#0(0"0(0#0#46"/Users/Mark/Desktop/Hacker News/DetailView.xib4300911832#455"    cd "/Users/Mark/Desktop/Hacker News"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/DetailView.nib" "/Users/Mark/Desktop/Hacker News/DetailView.xib"0#
+
+CCompileXIB "/Users/Mark/Desktop/Hacker News/MainWindow.xib"
+s293312670.753887
+e293312671.152147
+r1
+xCompileXIB
+x/Users/Mark/Desktop/Hacker News/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib293312670#293312671#0(0"0(0#0#46"/Users/Mark/Desktop/Hacker News/MainWindow.xib4300911832#455"    cd "/Users/Mark/Desktop/Hacker News"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/MainWindow.nib" "/Users/Mark/Desktop/Hacker News/MainWindow.xib"0#
+
+CCompileXIB "/Users/Mark/Desktop/Hacker News/WebViewController.xib"
+s293312670.329376
+e293312670.753784
+r1
+xCompileXIB
+x/Users/Mark/Desktop/Hacker News/WebViewController.xib
+lSLF07#2@32"CompileXIB WebViewController.xib293312670#293312670#0(0"0(0#0#53"/Users/Mark/Desktop/Hacker News/WebViewController.xib4300911832#469"    cd "/Users/Mark/Desktop/Hacker News"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/WebViewController.nib" "/Users/Mark/Desktop/Hacker News/WebViewController.xib"0#
+
+CCopyPNGFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/icon.png" icon.png
+s293312670.896746
+e293312670.930278
+r1
+xCopyPNGFile
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/icon.png
+xicon.png
+lSLF07#2@68"CopyPNGFile "build/Debug-iphoneos/Hacker News.app/icon.png" icon.png293312670#293312670#0(0"0(0#0#40"/Users/Mark/Desktop/Hacker News/icon.png4300911832#545"    cd "/Users/Mark/Desktop/Hacker News"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/Mark/Desktop/Hacker News/icon.png" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/icon.png"0#
+
+CCopyPNGFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/instapaper.png" instapaper.png
+s293312670.930394
+e293312671.069258
+r1
+xCopyPNGFile
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/instapaper.png
+xinstapaper.png
+lSLF07#2@80"CopyPNGFile "build/Debug-iphoneos/Hacker News.app/instapaper.png" instapaper.png293312670#293312671#0(0"0(0#0#46"/Users/Mark/Desktop/Hacker News/instapaper.png4300911832#557"    cd "/Users/Mark/Desktop/Hacker News"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/Mark/Desktop/Hacker News/instapaper.png" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/instapaper.png"0#
+
+CCpResource "build/Debug-iphoneos/Hacker News.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+s293312670.319160
+e293312670.329273
+r1
+xCpResource
+xbuild/Debug-iphoneos/Hacker News.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist293312670#293312670#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist4300911832#474"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"0#
+
+CCreateUniversalBinary "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News" normal "armv6 armv7"
+s293312485.116240
+e293312485.172263
+r1
+xCreateUniversalBinary
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News
+xnormal
+xarmv6 armv7
+lSLF07#2@93"CreateUniversalBinary "build/Debug-iphoneos/Hacker News.app/Hacker News" normal "armv6 armv7"293312485#293312485#0(0"0(0#0#43"/Users/Mark/Desktop/Hacker News/armv6 armv74300911832#530"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News" "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News" -output "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News"0#
+
+CDataModelVersionCompile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker_News.momd" "/Users/Mark/Desktop/Hacker News/Hacker_News.xcdatamodeld"
+s293312671.848468
+e293312671.910907
+r1
+xDataModelVersionCompile
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker_News.momd
+x/Users/Mark/Desktop/Hacker News/Hacker_News.xcdatamodeld
+lSLF07#2@104"DataModelVersionCompile "build/Debug-iphoneos/Hacker News.app/Hacker_News.momd" Hacker_News.xcdatamodeld293312671#293312671#0(0"0(0#0#56"/Users/Mark/Desktop/Hacker News/Hacker_News.xcdatamodeld4300911832#340"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc "/Users/Mark/Desktop/Hacker News/Hacker_News.xcdatamodeld" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker_News.momd"0#
+
+CGenerateDSYMFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app.dSYM" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News"
+s293312672.500969
+e293312672.529518
+r1
+xGenerateDSYMFile
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app.dSYM
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News
+lSLF07#2@111"GenerateDSYMFile "build/Debug-iphoneos/Hacker News.app.dSYM" "build/Debug-iphoneos/Hacker News.app/Hacker News"293312672#293312672#0(0"0(0#0#80"/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News4300911832#359"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News" -o "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app.dSYM"0#
+
+CLd "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News" normal armv7
+s293312672.459664
+e293312672.500853
+r1
+xLd
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News
+xnormal
+xarmv7
+lSLF07#2@85"Link /Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News293312672#293312672#0(0"0(0#0#0"4300911832#837"    cd "/Users/Mark/Desktop/Hacker News"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk "-L/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" -filelist "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News.LinkFileList" -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Hacker News"0#
+
+CLd "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News" normal armv6
+s293312484.124111
+e293312484.697514
+r1
+xLd
+x/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News
+xnormal
+xarmv6
+lSLF07#2@126"Link /Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News293312484#293312484#0(0"0(0#0#0"4300911832#878"    cd "/Users/Mark/Desktop/Hacker News"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk "-L/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" -filelist "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News.LinkFileList" -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv6/Hacker News"0#
+
+CLd "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News" normal armv7
+s293312484.922062
+e293312485.116002
+r1
+xLd
+x/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News
+xnormal
+xarmv7
+lSLF07#2@126"Link /Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News293312484#293312485#0(0"0(0#0#0"4300911832#878"    cd "/Users/Mark/Desktop/Hacker News"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk "-L/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" -filelist "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News.LinkFileList" -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Objects-normal/armv7/Hacker News"0#
+
+CProcessInfoPlistFile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Info.plist" Hacker_News-Info.plist
+s293312670.320170
+e293312670.324426
+r1
+xProcessInfoPlistFile
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Info.plist
+xHacker_News-Info.plist
+lSLF07#2@30"Process Hacker_News-Info.plist293312670#293312670#0(0"0(0#0#54"/Users/Mark/Desktop/Hacker News/Hacker_News-Info.plist4300911832#558"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Hacker_News-Info.plist -genpkginfo "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/ResourceRules.plist" -o "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/Info.plist"0#
+
+CProcessPCH /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch.gch Hacker_News_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s293312482.212859
+e293312483.324286
+r1
+xProcessPCH
+x/var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch.gch
+xHacker_News_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile Hacker_News_Prefix.pch293312482#293312483#0(0"0(0#0#54"/Users/Mark/Desktop/Hacker News/Hacker_News_Prefix.pch4300911832#1648"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv6" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -c "/Users/Mark/Desktop/Hacker News/Hacker_News_Prefix.pch" -o /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-bganzsnulidmryfceihvajvzdikx/Hacker_News_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch.gch Hacker_News_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s293312671.152292
+e293312671.848280
+r1
+xProcessPCH
+x/var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch.gch
+xHacker_News_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile Hacker_News_Prefix.pch293312671#293312671#0(0"0(0#0#54"/Users/Mark/Desktop/Hacker News/Hacker_News_Prefix.pch4300911832#1648"    cd "/Users/Mark/Desktop/Hacker News"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-generated-files.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-own-target-headers.hmap" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-all-target-headers.hmap" -iquote "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News-project-headers.hmap" "-F/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos" "-I/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/include" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources/armv7" "-I/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/DerivedSources" -c "/Users/Mark/Desktop/Hacker News/Hacker_News_Prefix.pch" -o /var/folders/9g/9gaKiiUpHAyBqUmDV7ty6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Hacker_News_Prefix-fiegqibylftepfashhyuksjsvzqj/Hacker_News_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/Mark/Library/MobileDevice/Provisioning Profiles/BD8FCBC7-F367-4943-99A2-468C077F2E1F.mobileprovision" "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision"
+s293312672.529635
+e293312672.531167
+r1
+xProcessProductPackaging
+x/Users/Mark/Library/MobileDevice/Provisioning Profiles/BD8FCBC7-F367-4943-99A2-468C077F2E1F.mobileprovision
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision
+lSLF07#2@197"ProcessProductPackaging "/Users/Mark/Library/MobileDevice/Provisioning Profiles/BD8FCBC7-F367-4943-99A2-468C077F2E1F.mobileprovision" "build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision"293312672#293312672#0(0"0(0#0#93"/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision4300911832#416"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Mark/Library/MobileDevice/Provisioning Profiles/BD8FCBC7-F367-4943-99A2-468C077F2E1F.mobileprovision" -o "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app/embedded.mobileprovision"0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent"
+s293312672.534929
+e293312672.559701
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+x/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent
+lSLF07#2@189"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent"293312672#293312672#0(0"0(0#0#106"/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent4300911832#434"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o "/Users/Mark/Desktop/Hacker News/build/Hacker News.build/Debug-iphoneos/Hacker News.build/Hacker News.xcent"0#
+
+CTouch "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"
+s293312672.531233
+e293312672.534831
+r1
+xTouch
+x/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app
+lSLF07#2@74"Touch /Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app293312672#293312672#0(0"0(0#0#0"4300911832#258"    cd "/Users/Mark/Desktop/Hacker News"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/Mark/Desktop/Hacker News/build/Debug-iphoneos/Hacker News.app"0#
+

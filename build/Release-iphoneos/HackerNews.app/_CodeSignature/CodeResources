@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>DetailView.nib</key>
+		<data>
+		ql8jPsT3OJXVCoFvU7VWkIMoM7Y=
+		</data>
+		<key>Hacker_News.momd/Hacker_News.mom</key>
+		<data>
+		OrN1nroEI3cyqi53TDUi2SYlNL8=
+		</data>
+		<key>MainWindow.nib</key>
+		<data>
+		gW7q0BUbGSL62uorCEcYj7jAApM=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>WebViewController.nib</key>
+		<data>
+		QEcoA9RXcRoqk1Paw6J5Tznz+d8=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		w9aaT7y4jcndTfNVv0QoJZGGzts=
+		</data>
+		<key>icon.png</key>
+		<data>
+		zHI8ePkaOwsSMg66sVpt4ahalFs=
+		</data>
+		<key>instapaper.png</key>
+		<data>
+		27faeTkZ75KCKPTW40dS4BoEWcM=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
