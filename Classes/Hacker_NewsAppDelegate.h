@@ -6,9 +6,6 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
-
 
 @class RootViewController;
 @class DetailViewController;
