@@ -27,7 +27,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://hnscraper.heroku.com/"]];;
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if (connection) {
-        payload = [[NSMutableData data] retain]; // this doesn't leak; it gets released in connectionDidFinish... or connection:didFail...
+        payload = [[NSMutableData data] autorelease];
         [indicator startAnimating];
         HNLog(@"Connection starting: %@", connection);
     } else {
@@ -61,7 +61,7 @@
     if (!instapaperIsLoggedIn) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Instapaper credentials" message:@" " delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login",nil];
 
-        UITextField *username = [[UITextField alloc] initWithFrame:CGRectMake(14, 45, 255, 23)];
+        UITextField *username = [[[UITextField alloc] initWithFrame:CGRectMake(14, 45, 255, 23)] autorelease];
         username.keyboardType = UIKeyboardTypeEmailAddress;
         username.keyboardAppearance = UIKeyboardAppearanceAlert;
         username.returnKeyType = UIReturnKeyDone;
@@ -72,7 +72,7 @@
 
         [alert addSubview:username];
 
-        UITextField *password = [[UITextField alloc] initWithFrame:CGRectMake(14, 45, 255, 23)];
+        UITextField *password = [[[UITextField alloc] initWithFrame:CGRectMake(14, 45, 255, 23)] autorelease];
 		password.frame = CGRectMake(14, 75, 255, 23);
         password.keyboardType = UIKeyboardTypeAlphabet;
         password.keyboardAppearance = UIKeyboardAppearanceAlert;
@@ -86,6 +86,7 @@
         [alert addSubview:password];
 
         [alert show];
+		[alert release];
     } else {
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.instapaper.com/api/add?url=%@&auto-title=1&username=%@&password=%@", [[detailItem valueForKey:@"url"] substringFromIndex:7], iUsername, iPassword]];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
@@ -241,13 +242,11 @@
     [indicator stopAnimating];
     
     [data release];
-	[payload release];
 
 	HNLog(@"Connection finished: %@", conn);
 }
 
 - (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error {
-    [payload release];
     [indicator stopAnimating];
 
     UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't fetch" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil] autorelease];
