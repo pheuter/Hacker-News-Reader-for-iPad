@@ -42,11 +42,9 @@
 
 	if ([[sender currentTitle] isEqualToString:@"View"]) {
 		webViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-		webViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
 		urlAddress = [detailItem valueForKey:@"url"];
 	} else {
 		webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
-		webViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
 		urlAddress = [detailItem valueForKey:@"discuss"];
 	}
 
