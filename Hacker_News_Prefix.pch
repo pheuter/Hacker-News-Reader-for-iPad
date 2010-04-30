@@ -15,7 +15,7 @@
 #endif
 
 #ifdef DEBUG
-#define HNLOG(fmt, ...) NSLog(@"%s: " fmt, __PRETTY_FUNCTION__, ##__VA_ARGS__)
+#define HNLog(fmt, ...) NSLog(@"%s: " fmt, __PRETTY_FUNCTION__, ##__VA_ARGS__)
 #else
-#define HNLOG(...)
+#define HNLog(...)
 #endif
