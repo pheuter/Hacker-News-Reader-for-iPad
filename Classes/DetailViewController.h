@@ -6,9 +6,7 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-
 @class RootViewController;
-
 @interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {    
     UIPopoverController *popoverController;
     UIToolbar *toolbar;
@@ -42,11 +40,4 @@
 - (IBAction)openArticle:(id)sender;
 - (IBAction)instapaperButtonDidClick:(id)sender;
 - (IBAction)setFavorite:(id)sender;
-
-#pragma mark -
-#pragma mark NSURLConnection Delegates
-- (void)connection:(NSURLConnection *)conn didReceiveResponse:(NSURLResponse *)response;
-- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data;
-- (void)connectionDidFinishLoading:(NSURLConnection *)conn;
-- (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error;
 @end

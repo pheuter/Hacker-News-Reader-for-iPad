@@ -271,7 +271,6 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Fayngersh (7WE3K56978)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -279,7 +278,6 @@
 				OTHER_CFLAGS = "-DEBUG=1";
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BD8FCBC7-F367-4943-99A2-468C077F2E1F";
 				SDKROOT = iphoneos3.2;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = armv7;

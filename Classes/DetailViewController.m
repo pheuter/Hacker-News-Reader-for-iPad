@@ -10,34 +10,30 @@
 #import "RootViewController.h"
 #import "WebViewController.h"
 
+#import "JSON.h";
+
 @interface DetailViewController ()
 @property (nonatomic, retain) UIPopoverController *popoverController;
 - (void)configureView;
 @end
 
-
-
 @implementation DetailViewController
-
 @synthesize toolbar, popoverController, detailItem, articleTitleLabel, articleLinkLabel, articleAuthorLabel, discussionButton, favoriteButton, indicator, scrollView, rootViewController;
-
 
 #pragma mark -
 #pragma mark Object insertion
 
 - (IBAction)insertNewObject:(id)sender {
-    NSURLRequest *request;
-    request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://hnscraper.heroku.com/"]];
-
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://hnscraper.heroku.com/"]];;
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if (connection) {
-        payload = [[NSMutableData data] retain];
+        payload = [[NSMutableData data] retain]; // this doesn't leak; it gets released in connectionDidFinish... or connection:didFail...
         [indicator startAnimating];
         HNLog(@"Connection starting: %@", connection);
     } else {
-        [[[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't fetch" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease] show];
+		UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't fetch" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease];
+        [alert show];
     }
-
 }
 
 - (IBAction)openArticle:(id)sender {
@@ -66,6 +62,7 @@
 - (IBAction) instapaperButtonDidClick:(id)sender {
     if (!instapaperIsLoggedIn) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Instapaper credentials" message:@" " delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login",nil];
+
         UITextField *username = [[UITextField alloc] initWithFrame:CGRectMake(14, 45, 255, 23)];
         username.keyboardType = UIKeyboardTypeEmailAddress;
         username.keyboardAppearance = UIKeyboardAppearanceAlert;
@@ -73,8 +70,12 @@
         username.font = [UIFont systemFontOfSize:20.0];
         username.backgroundColor = [UIColor whiteColor];
         username.placeholder = @"email";
-        [username setTag:5];
-        UITextField *password = [[UITextField alloc] initWithFrame:CGRectMake(14, 75, 255, 23)];
+		username.tag = 5;
+
+        [alert addSubview:username];
+
+        UITextField *password = [[UITextField alloc] initWithFrame:CGRectMake(14, 45, 255, 23)];
+		password.frame = CGRectMake(14, 75, 255, 23);
         password.keyboardType = UIKeyboardTypeAlphabet;
         password.keyboardAppearance = UIKeyboardAppearanceAlert;
         password.returnKeyType = UIReturnKeyDone;
@@ -82,23 +83,25 @@
         password.backgroundColor = [UIColor whiteColor];
         password.placeholder = @"password";
         password.secureTextEntry = YES;
-        [password setTag:6];
-        
-        [alert addSubview:username];
+		password.tag = 6;
+
         [alert addSubview:password];
+
         [alert show];
     } else {
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.instapaper.com/api/add?url=%@&auto-title=1&username=%@&password=%@", [[detailItem valueForKey:@"url"] substringFromIndex:7], iUsername, iPassword]];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
         NSHTTPURLResponse *response;
-        NSError *error;
-        [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-        [request release];
+        [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+		UIAlertView *alert = nil;
         if ([response statusCode] == 201) {
-            [[[[UIAlertView alloc] initWithTitle:@"Success" message:@"Article added to your inbox" delegate:nil cancelButtonTitle:@"Great" otherButtonTitles:nil] autorelease] show];
+			alert = [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Article added to your inbox" delegate:nil cancelButtonTitle:@"Great" otherButtonTitles:nil] autorelease];
         } else {
-            [[[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't add article to your inbox" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease] show];
+			alert = [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't add article to your inbox" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease];
         }
+
+		[alert show];
+        [request release];
     }
 }
 
@@ -109,8 +112,7 @@
     alertView.frame = CGRectMake(400, 300, 500, 170);
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.instapaper.com/api/authenticate?username=%@&password=%@",((UITextField *)[alertView viewWithTag:5]).text,((UITextField *)[alertView viewWithTag:6]).text]];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
@@ -118,18 +120,18 @@
         NSError *error;
         [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
         [request release];
-       if ([response statusCode] == 403) {
-           [[[[UIAlertView alloc] initWithTitle:@"Error" message:@"Wrong username and/or password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease] show];
+
+		UIAlertView *alert = nil;
+		if ([response statusCode] == 403) {
+			alert = [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Wrong username and/or password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] autorelease];
        } else if ([response statusCode] == 200) {
-           [[[[UIAlertView alloc] initWithTitle:@"Success" message:@"You have logged in" delegate:nil cancelButtonTitle:@"Great" otherButtonTitles:nil] autorelease] show];
-           instapaperIsLoggedIn = YES;
-           iUsername = [[NSString alloc] initWithString:((UITextField *)[alertView viewWithTag:5]).text];
-           iPassword = [[NSString alloc] initWithString:((UITextField *)[alertView viewWithTag:6]).text];
+            alert = [[[UIAlertView alloc] initWithTitle:@"Success" message:@"You have logged in" delegate:nil cancelButtonTitle:@"Great" otherButtonTitles:nil] autorelease];
+            instapaperIsLoggedIn = YES;
+            iUsername = [[NSString alloc] initWithString:((UITextField *)[alertView viewWithTag:5]).text];
+            iPassword = [[NSString alloc] initWithString:((UITextField *)[alertView viewWithTag:6]).text];
        }
-    }
-    [[alertView viewWithTag:5] release];
-    [[alertView viewWithTag:6] release];
-	[alertView release];
+		[alert show];
+	}
 }
 
 - (IBAction)setFavorite:(id)sender {
@@ -175,9 +177,7 @@
         [favoriteButton setTitle:@"Favorite" forState:UIControlStateNormal];
     }
 
-    if (scrollView.hidden) {
-		scrollView.hidden = NO;
-	}
+	scrollView.hidden = NO;
 }
 
 
@@ -185,7 +185,6 @@
 #pragma mark Split view support
 
 - (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
-    
     barButtonItem.title = @"Articles";
     NSMutableArray *items = [[toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
@@ -216,93 +215,51 @@
     return YES;
 }
 
-
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration {
 }
 
-
-#pragma mark -
-#pragma mark View lifecycle
-
-/*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
- */
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
 - (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
 	self.popoverController = nil;
 }
 
 #pragma mark -
 #pragma mark NSURLConnection Delegates
-- (void)connection:(NSURLConnection *)conn didReceiveResponse:(NSURLResponse *)response
-{
+- (void)connection:(NSURLConnection *)conn didReceiveResponse:(NSURLResponse *)response {
 	HNLog(@"Recieved response with expected length: %i", [response expectedContentLength]);
     [payload setLength:0];
-
 }
-- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data
-{
+
+- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data {
     HNLog(@"Recieving data. Incoming Size: %i  Total Size: %i", [data length], [payload length]);
     [payload appendData:data];
-
 }
-- (void)connectionDidFinishLoading:(NSURLConnection *)conn
-{    
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)conn {    
 	[conn release];
     
     NSString *data = [[NSString alloc] initWithData:payload encoding:NSUTF8StringEncoding];
     NSDictionary *rspData = [data JSONValue];
-    [data release];
     [rootViewController insertNewObject:[rspData objectForKey:@"results"] favorite:[detailItem valueForKey:@"favorite"]];
     [indicator stopAnimating];
     
+    [data release];
+	[payload release];
+
 	HNLog(@"Connection finished: %@", conn);
 }
-- (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error
-{
-    [payload setLength:0];
+
+- (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error {
+    [payload release];
     [indicator stopAnimating];
-    [[[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't fetch" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil] autorelease] show];
+
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't fetch" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil] autorelease];
+	[alert show];
 }
 
 #pragma mark -
 #pragma mark Memory management
 
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
 - (void)dealloc {
-	
     [popoverController release];
     [toolbar release];
 	
@@ -310,7 +267,5 @@
 	[articleTitleLabel release];
     
 	[super dealloc];
-}	
-
-
+}
 @end

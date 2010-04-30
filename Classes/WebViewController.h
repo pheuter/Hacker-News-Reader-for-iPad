@@ -6,7 +6,6 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-
 @interface WebViewController : UIViewController {
 	UIWebView *webView;
 }

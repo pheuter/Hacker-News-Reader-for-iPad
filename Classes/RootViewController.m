@@ -9,6 +9,8 @@
 #import "RootViewController.h"
 #import "DetailViewController.h"
 
+#import "JSON.h";
+
 /*
  This template does not ensure user interface consistency during editing operations in the table view. You must implement appropriate methods to provide the user experience you require.
  */
@@ -17,15 +19,12 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-
 @implementation RootViewController
 
 @synthesize detailViewController, fetchedResultsController, managedObjectContext;
 
-
 #pragma mark -
 #pragma mark View lifecycle
-
 
 - (NSArray *) fetchCurrentObjects {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -68,44 +67,15 @@
     }
 }
 
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
- */
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
- */
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
- */
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.    
     return YES;
 }
-
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *managedObject = [fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[managedObject valueForKey:@"title"] description];
-    if ([[managedObject valueForKey:@"favorite"] boolValue]) {
-        cell.textLabel.textColor = [UIColor redColor];
-    } else {
-        cell.textLabel.textColor = [UIColor blackColor];
-    }
+	cell.textLabel.textColor = ([[managedObject valueForKey:@"favorite"] boolValue]) ? [UIColor redColor] : [UIColor blackColor];
 }
-
 
 #pragma mark -
 #pragma mark Add a new object
@@ -158,23 +128,19 @@
     }  
 }
 
-
 #pragma mark -
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [[fetchedResultsController sections] count];
+    return [fetchedResultsController sections].count;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];
-    return [sectionInfo numberOfObjects];
+    return [[[fetchedResultsController sections] objectAtIndex:section] numberOfObjects];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -189,9 +155,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        
         // Delete the managed object.
         NSManagedObject *objectToDelete = [fetchedResultsController objectAtIndexPath:indexPath];
         if (detailViewController.detailItem == objectToDelete) {
@@ -214,23 +178,19 @@
     }   
 }
 
-
 #pragma mark -
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     // Set the detail item in the detail view controller.
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     detailViewController.detailItem = selectedObject;    
 }
 
-
 #pragma mark -
 #pragma mark Fetched results controller
 
 - (NSFetchedResultsController *)fetchedResultsController {
-    
     if (fetchedResultsController != nil) {
         return fetchedResultsController;
     }
@@ -265,8 +225,7 @@
     [sortDescriptors release];
     
     return fetchedResultsController;
-}    
-
+}
 
 #pragma mark -
 #pragma mark Fetched results controller delegate
@@ -275,10 +234,7 @@
     [self.tableView beginUpdates];
 }
 
-
-- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
-    
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
     switch(type) {
         case NSFetchedResultsChangeInsert:
             [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
@@ -290,15 +246,10 @@
     }
 }
 
-
-- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
-       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath {
-    
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
     UITableView *tableView = self.tableView;
     
     switch(type) {
-            
         case NSFetchedResultsChangeInsert:
             [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
@@ -318,31 +269,14 @@
     }
 }
 
-
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView endUpdates];
 }
 
-
 #pragma mark -
 #pragma mark Memory management
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc. that aren't in use.
-}
-
-
-- (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
-}
-
-
 - (void)dealloc {
-    
     [detailViewController release];
     [fetchedResultsController release];
     [managedObjectContext release];

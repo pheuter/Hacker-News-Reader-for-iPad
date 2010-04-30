@@ -6,12 +6,10 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-
 @class RootViewController;
 @class DetailViewController;
 
 @interface Hacker_NewsAppDelegate : NSObject <UIApplicationDelegate> {
-    
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;	    
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
