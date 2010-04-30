@@ -27,7 +27,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://hnscraper.heroku.com/"]];;
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if (connection) {
-        payload = [[NSMutableData data] autorelease];
+        payload = [[NSMutableData data] retain];
         [indicator startAnimating];
         HNLog(@"Connection starting: %@", connection);
     } else {
