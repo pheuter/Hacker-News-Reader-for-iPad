@@ -15,8 +15,8 @@
 	UIBarButtonItem *editButton;
 }
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
-@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (retain) NSFetchedResultsController *fetchedResultsController;
+@property (retain) NSManagedObjectContext *managedObjectContext;
 
 - (NSArray *) fetchCurrentObjects;
 - (void)insertNewObject:(NSDictionary *)articles favorite:(NSNumber *)isFavorite;
