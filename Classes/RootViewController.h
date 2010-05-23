@@ -13,6 +13,7 @@
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
 	UIBarButtonItem *editButton;
+	NSMutableArray *rowsToDelete;
 }
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 @property (retain) NSFetchedResultsController *fetchedResultsController;

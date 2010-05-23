@@ -128,6 +128,7 @@
             instapaperIsLoggedIn = YES;
             iUsername = [[NSString alloc] initWithString:((UITextField *)[alertView viewWithTag:5]).text];
             iPassword = [[NSString alloc] initWithString:((UITextField *)[alertView viewWithTag:6]).text];
+		   [self instapaperButtonDidClick:alertView];
        }
 		[alert show];
 	}
