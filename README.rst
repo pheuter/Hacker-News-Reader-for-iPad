@@ -12,7 +12,7 @@ Hacker News Reader is an elegant app for the iPad that allows the user to browse
 Features
 --------
 
-1.1 - *(Pending Appstore review)*
+1.1
 	- Ability to select and delete multiple articles
  	- Add to Instapaper upon login (instead of re-clicking the button)
  	- Article view now fullscreen with no scroll (more visibility)
