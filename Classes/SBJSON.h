@@ -82,7 +82,7 @@ accepts and what it generates. (Other than the above mentioned support
 for JSON fragments.) For example, it does not support trailing commas
 in arrays or objects. Nor does it support embedded comments, or
 anything else not in the JSON specification.
- 
+
 */
 @interface SBJSON : NSObject {
     BOOL humanReadable;

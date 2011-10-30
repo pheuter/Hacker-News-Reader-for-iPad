@@ -8,7 +8,7 @@
 
 @class DetailViewController;
 
-@interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate> {	
+@interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate> {
     DetailViewController *detailViewController;
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;

@@ -34,10 +34,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 - (NSString *)JSONFragment {
     SBJSON *generator = [[SBJSON new] autorelease];
-    
+
     NSError *error;
     NSString *json = [generator stringWithFragment:self error:&error];
-    
+
     if (!json)
         NSLog(@"%@", error);
     return json;
@@ -45,10 +45,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 - (NSString *)JSONRepresentation {
     SBJSON *generator = [[SBJSON new] autorelease];
-    
+
     NSError *error;
     NSString *json = [generator stringWithObject:self error:&error];
-    
+
     if (!json)
         NSLog(@"%@", error);
     return json;

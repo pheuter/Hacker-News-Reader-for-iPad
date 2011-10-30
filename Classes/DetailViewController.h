@@ -7,7 +7,7 @@
 //
 
 @class RootViewController;
-@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {    
+@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {
     UIPopoverController *popoverController;
     UIToolbar *toolbar;
     NSManagedObject *detailItem;

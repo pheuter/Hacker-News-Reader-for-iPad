@@ -32,7 +32,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /// Adds JSON parsing to NSString
 @interface NSString (NSString_SBJSON)
 
-/// Returns the object represented in the receiver, or nil on error. 
+/// Returns the object represented in the receiver, or nil on error.
 - (id)JSONFragmentValue;
 
 /// Returns the dictionary or array represented in the receiver, or nil on error.

@@ -42,7 +42,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  @li NSArray
  @li NSString
  @li NSNumber (also used for booleans)
- @li NSNull 
+ @li NSNull
  */
 - (NSString *)JSONFragment;
 
