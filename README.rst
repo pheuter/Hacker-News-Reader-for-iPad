@@ -18,7 +18,7 @@ Features
  	- Article view now fullscreen with no scroll (more visibility)
  	- Article title now adjusts to fit
  	- Overall bug fixes
-	
+
 1.0
 	- Instapaper integration
 	- Full-screen content viewing

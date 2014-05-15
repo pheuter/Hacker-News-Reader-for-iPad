@@ -76,7 +76,7 @@ static NSError *err(int code, NSString *str) {
 static NSError *errWithUnderlier(int code, NSError **u, NSString *str) {
     if (!u)
         return err(code, str);
-    
+
     NSDictionary *ui = [NSDictionary dictionaryWithObjectsAndKeys:
                         str, NSLocalizedDescriptionKey,
                         *u, NSUnderlyingErrorKey,
@@ -95,7 +95,7 @@ static char ctrl[0x22];
     ctrl[1] = '\\';
     for (int i = 1; i < 0x20; i++)
         ctrl[i+1] = i;
-    ctrl[0x21] = 0;    
+    ctrl[0x21] = 0;
 }
 
 - (id)init {
@@ -112,7 +112,7 @@ static char ctrl[0x22];
 /**
  Returns a string containing JSON representation of the passed in value, or nil on error.
  If nil is returned and @p error is not NULL, @p *error can be interrogated to find the cause of the error.
- 
+
  @param value any instance that can be represented as a JSON fragment
  @param allowScalar wether to return json fragments for scalar objects
  @param error used to return an error by reference (pass NULL if this is not desired)
@@ -120,15 +120,15 @@ static char ctrl[0x22];
 - (NSString*)stringWithObject:(id)value allowScalar:(BOOL)allowScalar error:(NSError**)error {
     depth = 0;
     NSMutableString *json = [NSMutableString stringWithCapacity:128];
-    
+
     NSError *err2 = nil;
     if (!allowScalar && ![value isKindOfClass:[NSDictionary class]] && ![value isKindOfClass:[NSArray class]]) {
-        err2 = err(EFRAGMENT, @"Not valid type for JSON");        
-        
+        err2 = err(EFRAGMENT, @"Not valid type for JSON");
+
     } else if ([self appendValue:value into:json error:&err2]) {
         return json;
     }
-    
+
     if (error)
         *error = err2;
     return nil;
@@ -137,7 +137,7 @@ static char ctrl[0x22];
 /**
  Returns a string containing JSON representation of the passed in value, or nil on error.
  If nil is returned and @p error is not NULL, @p error can be interrogated to find the cause of the error.
- 
+
  @param value any instance that can be represented as a JSON fragment
  @param error used to return an error by reference (pass NULL if this is not desired)
  */
@@ -148,7 +148,7 @@ static char ctrl[0x22];
 /**
  Returns a string containing JSON representation of the passed in value, or nil on error.
  If nil is returned and @p error is not NULL, @p error can be interrogated to find the cause of the error.
- 
+
  @param value a NSDictionary or NSArray instance
  @param error used to return an error by reference (pass NULL if this is not desired)
  */
@@ -165,7 +165,7 @@ static char ctrl[0x22];
     if ([fragment isKindOfClass:[NSDictionary class]]) {
         if (![self appendDictionary:fragment into:json error:error])
             return NO;
-        
+
     } else if ([fragment isKindOfClass:[NSArray class]]) {
         if (![self appendArray:fragment into:json error:error])
             return NO;
@@ -182,7 +182,7 @@ static char ctrl[0x22];
 
     } else if ([fragment isKindOfClass:[NSNull class]]) {
         [json appendString:@"null"];
-        
+
     } else {
         *error = err(EUNSUPPORTED, [NSString stringWithFormat:@"JSON serialisation not supported for %@", [fragment class]]);
         return NO;
@@ -193,8 +193,8 @@ static char ctrl[0x22];
 - (BOOL)appendArray:(NSArray*)fragment into:(NSMutableString*)json error:(NSError**)error {
     [json appendString:@"["];
     depth++;
-    
-    BOOL addComma = NO;    
+
+    BOOL addComma = NO;
     for (id value in fragment) {
         if (addComma)
             [json appendString:@","];
@@ -203,7 +203,7 @@ static char ctrl[0x22];
 
         if ([self humanReadable])
             [json appendString:[self indent]];
-        
+
         if (![self appendValue:value into:json error:error]) {
             return NO;
         }
@@ -225,7 +225,7 @@ static char ctrl[0x22];
     NSArray *keys = [fragment allKeys];
     if (self.sortKeys)
         keys = [keys sortedArrayUsingSelector:@selector(compare:)];
-    
+
     for (id value in keys) {
         if (addComma)
             [json appendString:@","];
@@ -234,12 +234,12 @@ static char ctrl[0x22];
 
         if ([self humanReadable])
             [json appendString:[self indent]];
-        
+
         if (![value isKindOfClass:[NSString class]]) {
             *error = err(EUNSUPPORTED, @"JSON object key must be string");
             return NO;
         }
-        
+
         if (![self appendString:value into:json error:error])
             return NO;
 
@@ -254,7 +254,7 @@ static char ctrl[0x22];
     if ([self humanReadable] && [fragment count])
         [json appendString:[self indent]];
     [json appendString:@"}"];
-    return YES;    
+    return YES;
 }
 
 - (BOOL)appendString:(NSString*)fragment into:(NSMutableString*)json error:(NSError**)error {
@@ -264,14 +264,14 @@ static char ctrl[0x22];
         kEscapeChars = [[NSMutableCharacterSet characterSetWithRange: NSMakeRange(0,32)] retain];
         [kEscapeChars addCharactersInString: @"\"\\"];
     }
-    
+
     [json appendString:@"\""];
-    
+
     NSRange esc = [fragment rangeOfCharacterFromSet:kEscapeChars];
     if ( !esc.length ) {
         // No special chars -- can just add the raw string:
         [json appendString:fragment];
-        
+
     } else {
         NSUInteger length = [fragment length];
         for (NSUInteger i = 0; i < length; i++) {
@@ -284,14 +284,14 @@ static char ctrl[0x22];
                 case '\r':  [json appendString:@"\\r"];        break;
                 case '\b':  [json appendString:@"\\b"];        break;
                 case '\f':  [json appendString:@"\\f"];        break;
-                default:    
+                default:
                     if (uc < 0x20) {
                         [json appendFormat:@"\\u%04x", uc];
                     } else {
                         [json appendFormat:@"%C", uc];
                     }
                     break;
-                    
+
             }
         }
     }
@@ -305,7 +305,7 @@ static char ctrl[0x22];
 /**
  Returns the object represented by the passed-in string or nil on error. The returned object can be
  a string, number, boolean, null, array or dictionary.
- 
+
  @param repr the json string to parse
  @param allowScalar whether to return objects for JSON fragments
  @param error used to return an error by reference (pass NULL if this is not desired)
@@ -317,10 +317,10 @@ static char ctrl[0x22];
             *error = err(EINPUT, @"Input was 'nil'");
         return nil;
     }
-    
+
     depth = 0;
     c = [repr UTF8String];
-    
+
     id o;
     NSError *err2 = nil;
     if (![self scanValue:&o error:&err2]) {
@@ -328,7 +328,7 @@ static char ctrl[0x22];
             *error = err2;
         return nil;
     }
-        
+
     // We found some valid JSON. But did it also contain something else?
     if (![self scanIsAtEnd]) {
         if (error)
@@ -350,7 +350,7 @@ static char ctrl[0x22];
 /**
  Returns the object represented by the passed-in string or nil on error. The returned object can be
  a string, number, boolean, null, array or dictionary.
- 
+
  @param repr the json string to parse
  @param error used to return an error by reference (pass NULL if this is not desired)
  */
@@ -361,7 +361,7 @@ static char ctrl[0x22];
 /**
  Returns the object represented by the passed-in string or nil on error. The returned object
  will be either a dictionary or an array.
- 
+
  @param repr the json string to parse
  @param error used to return an error by reference (pass NULL if this is not desired)
  */
@@ -375,7 +375,7 @@ static char ctrl[0x22];
 - (BOOL)scanValue:(NSObject **)o error:(NSError **)error
 {
     skipWhitespace(c);
-    
+
     switch (*c++) {
         case '{':
             return [self scanRestOfDictionary:(NSMutableDictionary **)o error:error];
@@ -413,7 +413,7 @@ static char ctrl[0x22];
             return NO;
             break;
     }
-    
+
     NSAssert(0, @"Should never get here");
     return NO;
 }
@@ -457,25 +457,25 @@ static char ctrl[0x22];
         *error = err(EDEPTH, @"Nested too deep");
         return NO;
     }
-    
+
     *o = [NSMutableArray arrayWithCapacity:8];
-    
+
     for (; *c ;) {
         id v;
-        
+
         skipWhitespace(c);
         if (*c == ']' && c++) {
             depth--;
             return YES;
         }
-        
+
         if (![self scanValue:&v error:error]) {
             *error = errWithUnderlier(EPARSE, error, @"Expected value while parsing array");
             return NO;
         }
-        
+
         [*o addObject:v];
-        
+
         skipWhitespace(c);
         if (*c == ',' && c++) {
             skipWhitespace(c);
@@ -483,9 +483,9 @@ static char ctrl[0x22];
                 *error = err(ETRAILCOMMA, @"Trailing comma disallowed in array");
                 return NO;
             }
-        }        
+        }
     }
-    
+
     *error = err(EEOF, @"End of input while parsing array");
     return NO;
 }
@@ -496,38 +496,38 @@ static char ctrl[0x22];
         *error = err(EDEPTH, @"Nested too deep");
         return NO;
     }
-    
+
     *o = [NSMutableDictionary dictionaryWithCapacity:7];
-    
+
     for (; *c ;) {
         id k, v;
-        
+
         skipWhitespace(c);
         if (*c == '}' && c++) {
             depth--;
             return YES;
-        }    
-        
+        }
+
         if (!(*c == '\"' && c++ && [self scanRestOfString:&k error:error])) {
             *error = errWithUnderlier(EPARSE, error, @"Object key string expected");
             return NO;
         }
-        
+
         skipWhitespace(c);
         if (*c != ':') {
             *error = err(EPARSE, @"Expected ':' separating key and value");
             return NO;
         }
-        
+
         c++;
         if (![self scanValue:&v error:error]) {
             NSString *string = [NSString stringWithFormat:@"Object value expected for key: %@", k];
             *error = errWithUnderlier(EPARSE, error, string);
             return NO;
         }
-        
+
         [*o setObject:v forKey:k];
-        
+
         skipWhitespace(c);
         if (*c == ',' && c++) {
             skipWhitespace(c);
@@ -535,9 +535,9 @@ static char ctrl[0x22];
                 *error = err(ETRAILCOMMA, @"Trailing comma disallowed in object");
                 return NO;
             }
-        }        
+        }
     }
-    
+
     *error = err(EEOF, @"End of input while parsing object");
     return NO;
 }
@@ -546,11 +546,11 @@ static char ctrl[0x22];
 {
     *o = [NSMutableString stringWithCapacity:16];
     do {
-        // First see if there's a portion we can grab in one go. 
+        // First see if there's a portion we can grab in one go.
         // Doing this caused a massive speedup on the long string.
         size_t len = strcspn(c, ctrl);
         if (len) {
-            // check for 
+            // check for
             id t = [[NSString alloc] initWithBytesNoCopy:(char*)c
                                                   length:len
                                                 encoding:NSUTF8StringEncoding
@@ -561,11 +561,11 @@ static char ctrl[0x22];
                 c += len;
             }
         }
-        
+
         if (*c == '"') {
             c++;
             return YES;
-            
+
         } else if (*c == '\\') {
             unichar uc = *++c;
             switch (uc) {
@@ -573,13 +573,13 @@ static char ctrl[0x22];
                 case '/':
                 case '"':
                     break;
-                    
+
                 case 'b':   uc = '\b';  break;
                 case 'n':   uc = '\n';  break;
                 case 'r':   uc = '\r';  break;
                 case 't':   uc = '\t';  break;
-                case 'f':   uc = '\f';  break;                    
-                    
+                case 'f':   uc = '\f';  break;
+
                 case 'u':
                     c++;
                     if (![self scanUnicodeChar:&uc error:error]) {
@@ -595,16 +595,16 @@ static char ctrl[0x22];
             }
             [*o appendFormat:@"%C", uc];
             c++;
-            
+
         } else if (*c < 0x20) {
             *error = err(ECTRL, [NSString stringWithFormat:@"Unescaped control character '0x%x'", *c]);
             return NO;
-            
+
         } else {
             NSLog(@"should not be able to get here");
         }
     } while (*c);
-    
+
     *error = err(EEOF, @"Unexpected EOF while parsing string");
     return NO;
 }
@@ -612,33 +612,33 @@ static char ctrl[0x22];
 - (BOOL)scanUnicodeChar:(unichar *)x error:(NSError **)error
 {
     unichar hi, lo;
-    
+
     if (![self scanHexQuad:&hi error:error]) {
         *error = err(EUNICODE, @"Missing hex quad");
-        return NO;        
+        return NO;
     }
-    
+
     if (hi >= 0xd800) {     // high surrogate char?
         if (hi < 0xdc00) {  // yes - expect a low char
-            
+
             if (!(*c == '\\' && ++c && *c == 'u' && ++c && [self scanHexQuad:&lo error:error])) {
                 *error = errWithUnderlier(EUNICODE, error, @"Missing low character in surrogate pair");
                 return NO;
             }
-            
+
             if (lo < 0xdc00 || lo >= 0xdfff) {
                 *error = err(EUNICODE, @"Invalid low surrogate char");
                 return NO;
             }
-            
+
             hi = (hi - 0xd800) * 0x400 + (lo - 0xdc00) + 0x10000;
-            
+
         } else if (hi < 0xe000) {
             *error = err(EUNICODE, @"Invalid high character in surrogate pair");
             return NO;
         }
     }
-    
+
     *x = hi;
     return YES;
 }
@@ -666,52 +666,52 @@ static char ctrl[0x22];
 - (BOOL)scanNumber:(NSNumber **)o error:(NSError **)error
 {
     const char *ns = c;
-    
+
     // The logic to test for validity of the number formatting is relicensed
     // from JSON::XS with permission from its author Marc Lehmann.
     // (Available at the CPAN: http://search.cpan.org/dist/JSON-XS/ .)
-    
+
     if ('-' == *c)
         c++;
-    
-    if ('0' == *c && c++) {        
+
+    if ('0' == *c && c++) {
         if (isdigit(*c)) {
             *error = err(EPARSENUM, @"Leading 0 disallowed in number");
             return NO;
         }
-        
+
     } else if (!isdigit(*c) && c != ns) {
         *error = err(EPARSENUM, @"No digits after initial minus");
         return NO;
-        
+
     } else {
         skipDigits(c);
     }
-    
+
     // Fractional part
     if ('.' == *c && c++) {
-        
+
         if (!isdigit(*c)) {
             *error = err(EPARSENUM, @"No digits after decimal point");
             return NO;
-        }        
+        }
         skipDigits(c);
     }
-    
+
     // Exponential part
     if ('e' == *c || 'E' == *c) {
         c++;
-        
+
         if ('-' == *c || '+' == *c)
             c++;
-        
+
         if (!isdigit(*c)) {
             *error = err(EPARSENUM, @"No digits after exponent");
             return NO;
         }
         skipDigits(c);
     }
-    
+
     id str = [[NSString alloc] initWithBytesNoCopy:(char*)ns
                                             length:c - ns
                                           encoding:NSUTF8StringEncoding
@@ -719,7 +719,7 @@ static char ctrl[0x22];
     [str autorelease];
     if (str && (*o = [NSDecimalNumber decimalNumberWithString:str]))
         return YES;
-    
+
     *error = err(EPARSENUM, @"Failed creating decimal instance");
     return NO;
 }

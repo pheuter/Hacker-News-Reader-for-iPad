@@ -50,10 +50,10 @@
 
 	NSURL *url = [NSURL URLWithString:urlAddress];
 	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-	
+
 	[self presentModalViewController:webViewController animated:YES];
 	[webViewController.webView loadRequest:requestObj];
-	
+
 	[webViewController release];
 }
 
@@ -107,7 +107,7 @@
 - (void)willPresentAlertView:(UIAlertView *)alertView {
     [[alertView viewWithTag:1] setFrame:CGRectMake(14, 110, 100, 40)];
     [[alertView viewWithTag:2] setFrame:CGRectMake(160, 110, 100, 40)];
-    
+
     alertView.frame = CGRectMake(400, 300, 500, 170);
 }
 
@@ -150,18 +150,18 @@
  When setting the detail item, update the view and dismiss the popover controller if it's showing.
  */
 - (void)setDetailItem:(NSManagedObject *)managedObject {
-    
+
 	if (detailItem != managedObject) {
 		[detailItem release];
 		detailItem = [managedObject retain];
-		
+
         // Update the view.
         [self configureView];
 	}
-    
+
     if (popoverController != nil) {
         [popoverController dismissPopoverAnimated:YES];
-    }		
+    }
 }
 
 
@@ -190,19 +190,19 @@
     [items insertObject:barButtonItem atIndex:0];
     [toolbar setItems:items animated:YES];
     [items release];
-	
+
     self.popoverController = pc;
 }
 
 
 // Called when the view is shown again in the split view, invalidating the button and popover controller.
 - (void)splitViewController: (UISplitViewController*)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
-    
+
     NSMutableArray *items = [[toolbar items] mutableCopy];
     [items removeObjectAtIndex:0];
     [toolbar setItems:items animated:YES];
     [items release];
-			
+
     self.popoverController = nil;
 }
 
@@ -234,14 +234,14 @@
     [payload appendData:data];
 }
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)conn {    
+- (void)connectionDidFinishLoading:(NSURLConnection *)conn {
 	[conn release];
-    
+
     NSString *data = [[NSString alloc] initWithData:payload encoding:NSUTF8StringEncoding];
     NSDictionary *rspData = [data JSONValue];
     [rootViewController insertNewObject:[rspData objectForKey:@"results"] favorite:[detailItem valueForKey:@"favorite"]];
     [indicator stopAnimating];
-    
+
     [data release];
 
 	HNLog(@"Connection finished: %@", conn);
@@ -260,10 +260,10 @@
 - (void)dealloc {
     [popoverController release];
     [toolbar release];
-	
+
 	[detailItem release];
 	[articleTitleLabel release];
-    
+
 	[super dealloc];
 }
 @end
